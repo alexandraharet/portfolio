@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alexandra Haret">
+    <meta name="robots" content="noindex" />
+    <title>Alexandra Haret - Front End Developer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
+    <script src="js/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script><!-- Dev only -->
+
+</head>
+
+<body>
+    <div class="row expanded">
+        <div class="centered darkbg">
+            <nav class="top-bar">
+                <div class="top-bar">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a href="#latest-work">Work</a>
+                            <!--                            <ul class="menu vertical">
+                            <li><a href="#">Weather forecast app</a></li>
+                            <li><a href="#">Sporting event website</a></a></a></li>
+                            <li><a href="#">HTML email template</a></li>
+                        </ul>  -->
+                    </li>
+                    <li><a href="#about">About</a>
+                        <!--                            <ul class="menu vertical">
+                        <li><a href="#">Skills & Expertise</a></li>
+                        <li><a href="#">Professional timeline</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="#skills">Skills & expertise</a></li>
+                <li><a href="#timeline">Professional timeline</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+</div>
+
+<section class="row expanded hero">
+    <div class="herooverlay">
+        <h2 class="herotext">My name is Alexandra Haret and I'm a front end developer living in Edinburgh, Scotland.</h2>
+    </div>
+
+</section>
+
+
+<section class="recent-work">
+    <div class="row small-up-1 medium-up-3">
+        <h3 id="latest-work">Recent Work</h3>
+        <div class="column">
+            <div class="card" id="forecast">
+                <h4 class="show-for-small-only">Weather Forecast App</h4>
+                <a href="http://alexandraharet.com/forecast" target="_blank">
+                    <div class="img-container">
+                        <img src="img/forecast.jpg">
+                    </div>
+                </a>
+                <div class="card-section technologies">
+                    <p>Short project description</p>
+                    <p>Stack used:</p>
+                    <div class="html5"></div>
+                    <div class="bootstrap"></div>
+                    <div class="javascript"></div>
+                    <div class="jquery"></div>
+                    <div class="angular"></div>
+                    <div class="php"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" id="trofeo">
+                <h4 class="show-for-small-only">Responsive Website</h4>
+                <a href="http://alexandraharet.com/trofeo" target="_blank">
+                    <div class="img-container">
+                        <img src="img/trofeo.jpg">
+                    </div>
+                </a>
+                <div class="card-section technologies">
+                    <p>Project short description here</p>
+                    <p>Stack used:</p>
+                    <div class="html5"></div>
+                    <div class="bootstrap"></div>
+                    <div class="javascript"></div>
+                    <div class="jquery"></div>
+                    <div class="php"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" id="html-email">
+                <h4 class="show-for-small-only">HTML Email Template</h4>
+                <a href="http://alexandraharet.com/email-template" target="_blank">
+                    <div class="img-container">
+                        <img src="img/email.jpg">
+                    </div>
+                </a>
+                <div class="card-section technologies">
+                    <p>Project short description here</p>
+                    <p>Stack used:</p>
+                    <div class="html5"></div>
+                    <div class="mailchimp"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about">
+
+    <div class="row">
+        <h3>About me</h3>
+
+        <p>Hello! My name is Alexandra Haret and I live in Edinburgh, Scotland.</p>
+
+        <p>In my spare time, I work on interesting side projects, run, drink coffee, cook and explore new places both in the UK and abroad.</p>
+
+        <p>I graduated highschool with a mojor in computer science and math, then got my BA in Sociology and MA in Marketing and Consumption. After having worked for just over a decade as a digital marketing speialist, I decided to embrace a new career path in order to make better use of my analytical and creative skills as a front end developer.</p>
+
+        <p>At the moment, I built websites and web apps with a focus on responsiveness and delightful user experience, following best-practice web standards.</p>
+
+        <p>As I have always had an interest in technology and in particular web development, I started off by studying basic web technologies such as HTML5, CSS3, JavaScript and then moved on to jQuery, AngularJS, Bootstrap, Foundation and more. Over the past years, I've applied these newly aquired skills in various projects for external clients, as well as personal projects that challenged me to learn even more. The latest projects are presente in the Recent Work section above.</p>
+    </div>
+
+    <section style="display:none">
+        <div class="row">
+            <h4>Side Projects</h4>
+
+            <p>In 2016 I let the team that organised Edinburgh's first '8 Hours Overtime for a Good Cause' event. The event takes place in several locations around the world and independent volunteer organisers bring together charities in need of work and expert professionals who spend 8 hours over a Friday night to deliver that work.</p>
+
+            <p>Last year's edition gathered 10 charities and over 55 professionals to deliver the projects. It was a fun and challenging experience that I thoroughly enjoyed! Due to time constraints I am unable to lead the organisation of the 2017 edition, I would like to see this hapen again and would love to participate as a volunteer!</p>
+
+            <p>At the moment I am working on a few different projects to practice my skills and knowledge. The Trofeo website (not yet launched) is created to promote a sporting event taking place in the South of Italy and was created using Bootstrap 3.</p>
+
+            <p>The Weather Forecast app shows weather information in a specific location (can be as specific as street + number), and uses AJAX, two API's, bits of AngularJS and loads of JavaScript and jQuery, all wrapped in a Bootstrap 4 layout.</p>
+
+            <p>As a project for the near future, I plan to re-build the 8 Hourcs Overtime for a Good Cause website as well.</p>
+        </div>
+    </section>
+
+    <section class="row expanded reverse" id="skills">
+        <div class="row small-up-1 medium-up-3">
+            <h4>Skills and expertise</h4>
+            <p class="centered">I am developing my skill-set to focus on what's most suited to getting the job done quickly and effectively.</p>
+
+            <div class="column">
+                <img src="img/html5.png" class="skill-icon hide-for-small-only" />
+                <p class="upperline">Front End Development</p>
+                <p>I write code that follows the W3C's web standards and semantic best practices. I use technologies like HTML5, CSS3 and jQuery to transform static artwork into mobile first, pixel prefect, interactive and fully functional websites.</p>
+            </div>
+
+            <div class="column">
+                <img src="img/responsive-grey.png" class="skill-icon hide-for-small-only" />
+                <p class="upperline">Responsive Web Development</p>
+                <p>I build websites and apps using responsive grid systems and with a mobile first approach. I use frontend frameworks such as Foundation and Bootstrap to ensure that layouts are standardised and more future-proof.</p>
+            </div>
+
+            <div class="column">
+                <img src="img/photoshop.png" class="skill-icon hide-for-small-only" />
+                <p class="upperline">Web Design</p>
+                <p>I know my way around multiple design applications (Photoshop, InDesign, Illustrator, Gimp) and am able to deliver website designs as well as modify your existing designs and covert them into fully responsive and interactive websites.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="timeline" class="row">
+        <h3>Professional timeline</h3>
+        <div class="middleLine timeline">
+            <div class="row timelineEvent show" id="code">
+                <div class="column small-12 medium-6">
+                    <div class="eventContent">
+                        <h3>Front End Development</h3>
+                        <h5>2015 - present</h5>
+                        <p>I started working on various side projects, like x, y, z.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row timelineEvent" id="marketing">
+                <div class="column small-12 medium-6 medium-offset-6">
+                    <div class="eventContent">
+                        <h3>Digital Marketing</h3>
+                        <h5>2008 - 2016</h5>
+                        <p>I started working on various side projects, like x, y, z.</p>
+                        <p class="companies">Companies: </p>
+                        <div class="row">
+                        <a href="www.onestopit.com" target="_blank"><img src="img/onestopit.png" class="work-logo" title="Onestop IT Solutions" alt="NobelGlobe logo" /></a>
+                        <a href="www.skyscanner.net" target="_blank"><img src="img/skyscanner.png" class="work-logo" title="Skyscanner" alt="Skyscanner logo" /></a>
+                        <a href="www.moodymonday.co.uk" target="_blank"><img src="img/moodymonday.png" class="work-logo" title="Moody Monday Interior Design" alt="Moody Monday logo" /></a>
+                    </div>
+                    <div class="row">
+                        <a href="www.2performant.com" target="_blank"><img src="img/2performant.png" class="work-logo" title="2 Performant Affiliate Marketing" alt="2performant logo" /></a>
+                        <a href="www.2parale.ro" target="_blank"><img src="img/2parale.png" class="work-logo" title="2 Parale Affiliate Marketing" alt="2parale logo" /></a>
+                        <a href="www.nobelglobe.com" target="_blank"><img src="img/nobelglobe.png" class="work-logo" title="NobelGlobe Telecommunications" alt="NobelGlobe logo" /></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row timelineEvent" id="copy">
+                <div class="column small-12 medium-6">
+                    <div class="eventContent">
+                        <div class="column small-12 medium-4 blue toMiddle">
+                            Companies:
+                            <img src="img/asni.png" class="work-logo" title="Advanced Strategy Network Information (company dissolved)" alt="ASNI logo" />
+                        </div>
+                        <div class="column small-12 medium-8">
+                        <h3>Copwriting</h3>
+                        <h5>2006 - 2008</h5>
+                        <p>I stated my career as a coywriter, creating content and sales letters for web pages aimed at selling a wide range of products. I wrote content for email sequences, websites, banners and later on managed AdWords campaigns as well.</p></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</section>
+
+<section class="row" id="contact">
+    <form>
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>Input Label
+        <input type="text" placeholder=".medium-6.columns">
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>Input Label
+        <input type="text" placeholder=".medium-6.columns">
+      </label>
+    </div>
+  </div>
+</form>
+</section>
+
+<section class="row expanded" id="footer">
+    <p class="centered">Copyright Alexandra Haret 2017</p>
+</section>
+
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script>
+$(document).foundation();
+</script>
+</body>
+
+</html>
