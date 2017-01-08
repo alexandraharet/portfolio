@@ -12,7 +12,7 @@ var addZoomInAndButton = function(myClass) {
     });
 }
 
-$(".herotext").delay(500).animate({top: "+20vh", opacity: 1}, 1000);
+$(".herotext").delay(500).animate({top: "+10vh", opacity: 1}, 1000);
 
 
 // WORKS
@@ -70,7 +70,7 @@ var getProjectIDs = function () {
 var timelineToCenter = function() {
   $(".middleLine").css({"background-position": "center"});
   if ($(".iconContainer").length > 0 ) $(".iconContainer").remove();
-  $(".timelineEvent").each(function() {
+    $(".timelineEvent").each(function() {
     $(this).append("<div class='iconContainer'> <img src='img/" + $(this).attr("id") + "-w.png' class='timelineIcon' /> </div>");
   })
 }
@@ -126,7 +126,7 @@ addStackIcons();
 
 
 // vertical alignment to middle using CSS, for class .center
-
+/*
 $(window).resize(function() {
  $(".toMiddle").each(function() {
    var wh = (($(this).parent().height()-$(this).height())/2)+'px';
@@ -136,7 +136,7 @@ $(window).resize(function() {
  });
 
 
-}).resize();
+}).resize(); */
 
 
 
