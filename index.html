@@ -23,16 +23,21 @@
 </head>
 
 <body>
-    <nav class="top-bar row expanded darkbg">
+    <div data-sticky-container id="home" data-magellan-target="home">
+        <div class="sticky" id="top" data-sticky data-margin-top="0" style="" data-margin-bottom="0">
+    <nav class="top-bar row expanded darkbg" data-magellan>
         <ul class="menu align-center">
+            <li><a href="#home">Home</a></li>
             <li><a href="#latest-work">Work</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills & expertise</a></li>
             <li><a href="#timeline">Professional timeline</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
+</div>
+</div>
 
 
     <section class="row expanded hero">
@@ -44,7 +49,7 @@
 
 
     <section class="recent-work">
-            <h3 id="latest-work">Recent Work</h3>
+            <h3 id="latest-work" data-magellan-target="latest-work">Recent Work</h3>
                     <div class="row small-up-1 medium-up-3">
             <div class="column">
                 <div class="card" id="forecast">
@@ -106,7 +111,7 @@
     </section>
 
 
-    <section id="about">
+    <section id="about" data-magellan-target="about">
 
         <div class="row">
             <div class="column small-12">
@@ -140,7 +145,7 @@
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" data-magellan-target="skills">
             <div class="row expanded reverse align-center">
                 <div class="row">
             <div class="column small-12">
@@ -171,7 +176,7 @@
         </section>
 
 
-        <section id="timeline" class="row">
+        <section id="timeline" data-magellan-target="timeline" class="row">
             <div class="column small-12">
                 <h3>Professional timeline</h3>
             </div>
@@ -355,7 +360,7 @@
 
         </section>
 
-        <section class="row" id="contact">
+        <section class="row" id="contact" data-magellan-target="contact">
             <form>
                 <div class="row">
                     <div class="medium-6 columns">

@@ -12,7 +12,7 @@ var addZoomInAndButton = function(myClass) {
     });
 }
 
-$(".herotext").delay(500).animate({top: "+10vh", opacity: 1}, 1000);
+$(".herotext").delay(500).animate({top: "+25vh", opacity: 1}, 1000);
 
 
 // WORKS

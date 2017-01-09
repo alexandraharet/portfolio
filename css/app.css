@@ -1,10 +1,13 @@
 a, a:visited {
-    color: #737373;
+    color: #999999;
+    border-bottom: 3px solid #333333;
 }
 
-a:hover {
-    color: #999999;
+a:hover, a.active {
+    color: #2ca0a0;
+    border-bottom: 3px solid #2ca0a0;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding-top: 1em;
@@ -12,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #2ca0a0;
 }
 
+.sticky {
+  width:100%;
+}
 
 .nomargin {
   margin-right: 0px;
@@ -19,15 +25,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-    background: #e6e6e6 url("../img/edi-7.jpg") no-repeat fixed center;
+    background: #e6e6e6 url("../img/alexandra-3.jpg") no-repeat fixed center;
     background-size: cover;
     height: 60vh;
+    background-position: right top; 
 }
 
 .herotext {
   position: relative;
-  top: 0;
   display: block;
+  width: 1000px;
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
