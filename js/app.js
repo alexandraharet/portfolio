@@ -109,9 +109,11 @@ $(function() {
   var scrollMagicController = new ScrollMagic.Controller();
 
   var animateTimeline = function() {
+  var offset = - $(window).height()/4; // TODO: recalculate offset on screen resize;
   $('.timelineEvent').each(function() {
       new ScrollMagic.Scene({
-         triggerElement: this
+         triggerElement: this,
+         offset
         }).setClassToggle(this, "show").addTo(scrollMagicController);
       });
     }
