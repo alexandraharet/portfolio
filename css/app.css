@@ -1,4 +1,24 @@
-nav a, a:visited {
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.no-js #top-menu {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js #top-menu {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+
+nav a, nav a:visited {
     color: #999999;
     border-bottom: 3px solid #333333;
 }
@@ -8,11 +28,16 @@ nav a:hover, a.active {
     border-bottom: 3px solid #2ca0a0;
 }
 
+a {
+  color: #2ca0a0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
   color: #2ca0a0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .sticky {
@@ -39,9 +64,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
-  margin-bottom: -30vh;
   text-align: center;
-  color: #afe9e9;
+  color: #ffffff;
+}
+
+#back-top {
+  position: fixed;
+  bottom:20px;
+  right: 2%;
+  z-index: 100;
+  opacity: 0.8;
+  max-width: 10%;
+  height: auto;
 }
 
 .centered {
@@ -286,6 +320,7 @@ nav {
   padding: 5px 0;
   height: auto;
   width: 100%;
+  max-width: 60px;
   text-align: center;
 }
  .blue {

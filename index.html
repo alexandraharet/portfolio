@@ -9,11 +9,12 @@
     <title>Alexandra Haret - Front End Developer</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Kanit:100|Raleway|Montserrat">
     <link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
     <script src="js/app.js"></script>
 
@@ -23,10 +24,15 @@
 </head>
 
 <body>
-    <div data-sticky-container id="home" data-magellan-target="home">
-        <div class="sticky" id="top" data-sticky data-margin-top="0" style="" data-margin-bottom="0">
-    <nav class="top-bar row expanded darkbg" data-magellan>
-        <ul class="menu align-center">
+              <div class="title-bar" data-responsive-toggle="top-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="top-menu"></button>
+            <div class="title-bar-title">Menu</div>
+          </div>
+
+          <div data-sticky-container id="home" data-magellan-target="home">
+              <div class="sticky" data-sticky data-margin-top="0" data-margin-bottom="0">
+    <nav class="top-bar row expanded darkbg" id="top-menu" data-magellan>
+        <ul class="menu align-center vertical medium-horizontal">
             <li><a href="#home">Home</a></li>
             <li><a href="#latest-work">Work</a></li>
             <li><a href="#about">About</a></li>
@@ -39,6 +45,10 @@
 </div>
 </div>
 
+
+<div id="back-top">
+  <a href="#home" data-magellan-target="home"><img src="img/goback.png" title="Go back to top" alt="back to top button"></a>
+</div>
 
     <section class="row expanded hero">
         <div class="herooverlay">
@@ -121,11 +131,21 @@
 
             <p>In my spare time, I work on interesting side projects, run, drink coffee, cook and explore new places both in the UK and abroad.</p>
 
-            <p>I graduated highschool with a mojor in computer science and math, then got my BA in Sociology and MA in Marketing and Consumption. After having worked for just over a decade as a digital marketing speialist, I decided to embrace a new career path in order to make better use of my analytical and creative skills as a front end developer.</p>
+            <p>I graduated high school with a major in computer science and math, then got my BA in Sociology and MA in Marketing and Consumption. After having worked for just over a decade as a digital marketing specialist, I decided to embrace a new career path in order to make better use of my analytical and creative skills as a front end developer.</p>
 
             <p>At the moment, I built websites and web apps with a focus on responsiveness and delightful user experience, following best-practice web standards.</p>
 
-            <p>As I have always had an interest in technology and in particular web development, I started off by studying basic web technologies such as HTML5, CSS3, JavaScript and then moved on to jQuery, AngularJS, Bootstrap, Foundation and more. Over the past years, I've applied these newly aquired skills in various projects for external clients, as well as personal projects that challenged me to learn even more. The latest projects are presente in the Recent Work section above.</p>
+            <p>As I have always had an interest in technology and in particular web development, I started off by studying basic web technologies such as HTML5, CSS3, JavaScript and then moved on to jQuery, AngularJS, Bootstrap, Foundation and more. Over the past years, I've applied these newly acquired skills in various projects for external clients, as well as personal projects that challenged me to learn even more. The latest projects are presented in the Recent work section above.</p>
+            <p>You can find out more about my projects on the following websites:</p>
+
+            <div class="sm-icons centered">
+                <ul>
+                    <li><a href="https://github.com/alexandraharet" target="_blank"><img src="img/git.png" title="GitHub"></a></li>
+                    <li><a href="http://stackoverflow.com/users/5847696/alexandra" target="_blank"><img src="img/so.png" title="Stack Overflow"></a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandraharet/" target="_blank"><img src="img/li.png" title="LinkedIn"></a></li>
+                </ul>
+            </div>
+
         </div>
         </div>
 
@@ -169,7 +189,7 @@
                 <div class="column small-12 medium-expand">
                     <img src="img/photoshop.png" class="skill-icon hide-for-small-only" />
                     <p class="upperline">Web Design</p>
-                    <p>I know my way around multiple design applications (Photoshop, InDesign, Illustrator, Gimp) and am able to deliver website designs as well as modify your existing designs and covert them into fully responsive and interactive websites.</p>
+                    <p>I know my way around multiple design applications (Photoshop, InDesign, Illustrator, Gimp) and am able to deliver website designs as well as modify your existing designs and convert them into fully responsive websites.</p>
                 </div>
             </div>
             </div>
@@ -183,7 +203,7 @@
                 <h3>Professional timeline</h3>
             </div>
             <div class="middleLine timeline">
-                <div class="row timelineEvent" id="code">
+                <div class="row timelineEvent show" id="code">
                     <div class="column small-12 medium-6">
                         <div class="eventContent">
                             <div class="row align-middle" >
@@ -380,9 +400,8 @@
 
         <div class="column small-12 align-center">
             <h3>Get in touch</h3>
-            <p class="centered">The fastest way to get a response from me is to send me an email.</br>
-                I will try my best to respond to your email in less than 24 hours.</p>
-            <a href="mailto:yellow@alexandraharet.com"><h5>yellow@alexandraharet.com</h5></a>
+            <p class="centered">The fastest way to get a response from me is to send me an email. I will try my best to respond to your email in less than 24 hours.</p>
+            <p class="centered"><a href="mailto:yellow@alexandraharet.com">yellow@alexandraharet.com</a></p>
 
             <div class="centered" style="display: none;">
             <a href="resume.pdf" class="button">Download my résumé
@@ -397,7 +416,7 @@
         <section id="about-website" class="row">
             <div class="column small-12">
                 <h3>About this website</h3>
-                <p>This website was built responsively using HTML5, CSS, <a href="https://jquery.com/" target="_blank">jQuery</a> and a slightly constumised instance of the <a href="https://foundation.zurb.com/sites/docs/flex-grid.html" target="_blank">Foundation Flex Grid</a>. Fonts are served through <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>. To animate the timeline I used the <a href="http://scrollmagic.io/" target="_blank">ScollMagic</a> javascript library.</p>
+                <p>This website was built responsively using HTML5, CSS, <a href="https://jquery.com/" target="_blank">jQuery</a> and a slightly customised instance of the <a href="http://foundation.zurb.com/sites.html" target="_blank">Foundation</a> Flex Grid. Fonts are served through <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>. To animate the timeline I used the <a href="http://scrollmagic.io/" target="_blank">ScrollMagic</a> JavaScript library.</p>
             </div>
         </section>
 

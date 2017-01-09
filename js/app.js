@@ -8,11 +8,10 @@ var addZoomInAndButton = function(myClass) {
     },
     function(){
       $(this).find("img").removeClass("zoom-in");
-      //$(this).removeClass("addButton");
     });
 }
 
-$(".herotext").delay(500).animate({top: "+25vh", opacity: 1}, 1000);
+$(".herotext").delay(500).animate({top: "+20vh", opacity: 1}, 1000);
 
 
 // WORKS
@@ -101,26 +100,63 @@ if ($('.eventContent').length > 0 ) {
 
 addTimelineArrows();
 
+// back to top button fade-in and fade-out
+
+// hide #back-top first
+  $("#back-top").hide();
+
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+// end
+
+
 
 // Scrollmagic for animated timeline
 
 $(function() {
+
   // Init ScrollMagic Controller
   var scrollMagicController = new ScrollMagic.Controller();
 
   var animateTimeline = function() {
-  var offset = - $(window).height()/4; // TODO: recalculate offset on screen resize;
+  var offset = - $(window).height()/4.5; // TODO: recalculate offset on screen resize;
+
   $('.timelineEvent').each(function() {
-      new ScrollMagic.Scene({
+      var scene = new ScrollMagic.Scene({
          triggerElement: this,
          offset
-        }).setClassToggle(this, "show").addTo(scrollMagicController);
+       }).setClassToggle(this, "show").addIndicators().addTo(scrollMagicController);
+       var triggerElement = scene.triggerElement();
+       $(triggerElement).css({
+         "-webkit-overflow-scrolling": "touch"
+       }).children().css({
+           "-webkit-transform": "translateZ(0px)",
+           "-webkit-transform": "translate3d(0,0,0)"
+         });
       });
     }
    animateTimeline();
   });
 
 /* END */
+
 
 
 addZoomInAndButton(".img-container");
