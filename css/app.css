@@ -1,9 +1,9 @@
-a, a:visited {
+nav a, a:visited {
     color: #999999;
     border-bottom: 3px solid #333333;
 }
 
-a:hover, a.active {
+nav a:hover, a.active {
     color: #2ca0a0;
     border-bottom: 3px solid #2ca0a0;
 }
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #e6e6e6 url("../img/alexandra-3.jpg") no-repeat fixed center;
     background-size: cover;
     height: 60vh;
-    background-position: right top; 
+    background-position: right top;
 }
 
 .herotext {
@@ -42,11 +42,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -30vh;
   text-align: center;
   color: #afe9e9;
-}
-
-img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 }
 
 .centered {
@@ -70,6 +65,11 @@ nav {
 
 .darkbg {
   background-color: #333333;
+}
+
+.grey img  {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .img-container {
@@ -150,16 +150,12 @@ nav {
   text-align: center;
   width: 40px;
   height: auto;
-  -webkit-filter: none;
-  filter: none;
 }
 
 
 .reverse {
   background: #d7f4f4;
-  padding: 20px 0 40px 0;
-  margin: 40px 0;
-}
+  }
 
 .upperline {
   border-top: 2px solid #ffffff;
@@ -175,6 +171,16 @@ nav {
   height: auto;
   margin: 0 auto;
   padding: 20px 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+}
+
+.reverse {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 
@@ -260,7 +266,6 @@ nav {
   position: absolute;
   bottom: -30px;
   left: -30px;
-  filter: none;
   z-index: 10;
   width: 60px;
   height: 60px;
@@ -282,25 +287,47 @@ nav {
   height: auto;
   width: 100%;
   text-align: center;
-  -webkit-filter: none;
-  filter: none;
 }
  .blue {
    background-color: #2ca0a0;
    margin-right: -20px;
  }
 
+.sm-icons li {
+  display: inline-block;
+}
 
- .toMiddle {
-   position: absolute;
- }
+.sm-icons img {
+  width: 60px;
+  padding: 10px;
+  height: auto;
+}
+
+.sm-icons a, ul {
+  border: 0px;
+  margin: 0px;
+}
+
+a.button {
+  border: 3px solid #2ca0a0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  font-size: 1.5em;
+  background-color: #ffffff;
+  color: #2ca0a0;
+}
+
+.button:hover {
+  background-color: #2ca0a0;
+}
 
 #footer {
   background-color: #333333;
   color: #2ca0a0;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 500px;
+  margin-top: 100px;
 }
 
 
