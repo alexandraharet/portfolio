@@ -11,9 +11,12 @@
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
   <link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/sprites.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+
+
 
 </head>
 
@@ -52,9 +55,9 @@
       <div class="column">
         <div class="card" id="forecast" data-equalizer-watch>
           <h4 class="show-for-small-only">Weather Forecast App</h4>
-          <a href="http://alexandraharet.com/forecast" target="_blank">
+          <a href="/forecast" target="_blank">
             <div class="img-container grey">
-              <img src="img/forecast.jpg">
+              <img src="img/forecast.png">
             </div>
           </a>
           <div class="card-section">
@@ -74,9 +77,9 @@
       <div class="column">
         <div class="card" id="trofeo" data-equalizer-watch>
           <h4 class="show-for-small-only">Responsive Website</h4>
-          <a href="http://alexandraharet.com/trofeo" target="_blank">
+          <a href="/trofeo" target="_blank">
             <div class="img-container grey">
-              <img src="img/trofeo.jpg">
+              <img src="img/trofeo.png">
             </div>
           </a>
           <div class="card-section">
@@ -95,9 +98,9 @@
       <div class="column" >
         <div class="card" id="html-email" data-equalizer-watch>
           <h4 class="show-for-small-only">HTML Email Template</h4>
-          <a href="http://alexandraharet.com/samplework/email-template" target="_blank">
+          <a href="/samplework/email-template" target="_blank">
             <div class="img-container grey">
-              <img src="img/email.jpg">
+              <img src="img/email.png">
             </div>
           </a>
           <div class="card-section">
@@ -129,11 +132,11 @@
           <p>I currently built websites and web apps with a focus on responsiveness and delightful user experience, following best-practice web standards. My latest projects are listed in the 'Recent work' section above.</p>
           <p>You can find out more about any of my projects on the following websites:</p>
 
-          <div class="sm-icons centered">
+          <div class="social-icons centered">
             <ul>
-              <li><a href="https://github.com/alexandraharet" target="_blank"><img src="img/git.png" title="GitHub"></a></li>
-              <li><a href="http://stackoverflow.com/users/5847696/alexandra" target="_blank"><img src="img/so.png" title="Stack Overflow"></a></li>
-              <li><a href="https://www.linkedin.com/in/alexandraharet/" target="_blank"><img src="img/li.png" title="LinkedIn"></a></li>
+              <li><a href="https://github.com/alexandraharet" target="_blank"><div class="git" title="GitHub"></div></a></li>
+              <li><a href="http://stackoverflow.com/users/5847696/alexandra" target="_blank"><div class="so" title="Stack Overflow"></div></a></li>
+              <li><a href="https://www.linkedin.com/in/alexandraharet/" target="_blank"><div class="li" title="LinkedIn"></div></a></li>
             </ul>
           </div>
 
@@ -166,7 +169,7 @@
               </div>
 
               <div class="column small-12 medium-expand">
-                <img src="img/html5.png" class="skill-icon hide-for-small-only" />
+                <img src="img/html5-big.png" class="skill-icon hide-for-small-only" />
                 <p class="upperline">Front End Development</p>
                 <p>I write code that follows the W3C's web standards and semantic best practices. I use technologies like HTML5, CSS3 and jQuery to transform static artwork into mobile first, pixel prefect, interactive and fully functional websites.</p>
               </div>
@@ -202,7 +205,7 @@
                     <h4>Front end development (freelance)</h4>
                     <div class="row align-middle">
                       <div class="column small-3">
-                        <img src="img/trofeo.png" class="work-logo" title="Trofeo Francesco Verduci (sporting event)" alt="Trofeo Francesco Verduci logo" />
+                        <div class="trofeo-logo work-logo" title="Trofeo Francesco Verduci (sporting event)" alt="Trofeo Francesco Verduci logo"></div>
                       </div>
                       <div class="column small-9">
                         <p>Trofeo Verduci - sporting event</br>
@@ -210,11 +213,8 @@
                           Feb 2016 - present</p>
                         </div>
                       </div>
-
-
-
                     </div>
-                    <div class="column small-12 worktype">
+                    <div class="column small-12 work-type">
                       <p>My front end career started as a part-time hobby, from builing simple HTML-based 'tabs' for corporate Facebook pages to developing HTML email templates and customised website widgets using HTML and JavaScript. Finding this domain very appealing, I decided to make a career change and I'm currently honing my new-found front end coding skills (in particular CSS, JavaScript, jQuery and AngularJS) delivering projects for various external clients - Trofeo Verduci being one of the most recent ones.</p>
                     </div>
 
@@ -233,18 +233,15 @@
                       <h4>Marketing and website management</h4>
                       <div class="row align-middle">
                         <div class="column small-3 ">
-                          <a href="http://www.onestopit.com" target="_blank"><img src="img/onestopit.png" class="work-logo" title="Onestop IT Solutions" alt="Onestop IT logo" /></a>
+                          <a href="http://www.onestopit.com" target="_blank"><div class="onestopit work-logo" title="Onestop IT Solutions" alt="Onestop IT logo"></div></a>
                         </div>
                         <div class="column small-9">
                           <p>Onestop IT - IT solutions for businesses</br>
                             Edinburgh, UK</br>
                             Aug 2015 - Dec 2016</p></div>
                           </div>
-
-
-                          <!--                                My work spanned across all areas of digital marketing, from strategy to implementation and reporting. Throught my previous marketing roles, I have also taken the initiative to maintain and improve the corporate website, having gained experience in working with two widely used platforms: Joomla and WordPress. This work piqued my interest in the underlying code that drives websites so I gradually started to 'look under the hood' to understand the code behind and try to improve the look and behaviour of the websites, by creating modules and landing pages, editing and adding new CSS to improve responsiveness, implementing schema structured data markup to improve presence on search engines, etc. -->
                         </div>
-                        <div class="column small-12 worktype">
+                        <div class="column small-12 work-type">
                           <p>My work spanned across all areas of digital marketing, from strategy and PR to email campaigns and reporting</p>
                           <p>I took the initiative to maintain and improve the corporate Joomla-based website. This work piqued my interest in the underlying code that drives websites so I gradually started to 'look under the hood' and improve the look and behaviour of the website by creating modules and landing pages, editing and adding new CSS to improve responsiveness, implementing schema structured data markup to improve presence on search engines, etc.</p>
                           <p>I also built several HTML email templates following PSD mock-ups provided and optimised them to render appropriately on common email clients on both desktop and mobile devices.</p>
@@ -263,7 +260,7 @@
                           <h4>Digital marketing (contract)</h4>
                           <div class="row align-middle">
                             <div class="column small-3">
-                              <a href="http://www.moodymonday.co.uk" target="_blank"><img src="img/moodymonday.png" class="work-logo" title="Moody Monday Interior Design" alt="Moody Monday logo" /></a>
+                              <a href="http://www.moodymonday.co.uk" target="_blank"><div class="moodymonday work-logo" title="Moody Monday Interior Design" alt="Moody Monday logo"></div></a>
                             </div>
                             <div class="column small-9">
                               <p>Moody Monday - luxury interior design</br>
@@ -273,7 +270,7 @@
                             </div>
 
                           </div>
-                          <div class="column small-12 worktype">
+                          <div class="column small-12 work-type">
                             <p>My work with the brand included marketing, social media and PR tasks: refining and implementing the social media marketing strategy across various relevant platforms (Facebook, Twitter, Pinterest, LinkedIn), creating, delivering and reporting on the e-mail newsletter campaigns, setting up, managing and optimizing the brand's paid ads campaigns. I also updated the WordPress website and honed the MailChimp email newsletter template.</p>
 
                           </div>
@@ -293,7 +290,7 @@
                             <h4>Social media marketing (contract)</h3>
                               <div class="row align-middle">
                                 <div class="column small-3">
-                                  <a href="http://www.skyscanner.net" target="_blank"><img src="img/skyscanner.png" class="work-logo" title="Skyscanner" alt="Skyscanner logo" /></a>
+                                  <a href="http://www.skyscanner.net" target="_blank"><div class="skyscanner work-logo" title="Skyscanner" alt="Skyscanner logo"></div></a>
                                 </div>
                                 <div class="column small-9">
                                   <p>Skyscanner - travel metasearch engine</br>
@@ -303,7 +300,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="column small-12 worktype">
+                              <div class="column small-12 work-type">
 
                                 <p>During my collaboration with Skyscanner, I worked on a number of tasks mostly in the social media and online marketing domain: market research, social media strategy and content creation, social ads management, etc.</p>
 
@@ -320,10 +317,10 @@
                           <div class="eventContent">
                             <div class="row align-middle" >
                               <div class="column small-12 companies">
-                                <h4>Communications Specialist</h4>
+                                <h4>Communications specialist</h4>
                                 <div class="row align-middle">
                                   <div class="column small-3">
-                                    <a href="http://www.nobelglobe.com" target="_blank"><img src="img/nobelglobe.png" class="work-logo" title="NobelGlobe Telecommunications" alt="NobelGlobe logo" /></a>
+                                    <a href="http://www.nobelglobe.com" target="_blank"><div class="nobelglobe work-logo" title="NobelGlobe Telecommunications" alt="NobelGlobe logo"></div></a>
                                   </div>
                                   <div class="column small-9">
                                     <p>NobelGlobe - B2B and consumer telecom solutions</br>
@@ -332,7 +329,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="column small-12 worktype">
+                                <div class="column small-12 work-type">
                                   <p>My role involved creating the external and internal communication materials. I have set up and successfully developed the company's social media presence on multiple channels (Facebook, Twitter, Google+) to meet the business goals to the point of generating over $10,000 in monthly sales from social media channels alone. This work also involved building custom 'page tabs' using simple HTML and doing design work to develop the imagery needed for these channels.</p>
 
                                   <p>My role also included working on SEO-related tasks: link building, promoting the company blogs on social media, improving the semantic usage of HTML markup for web pages.</p>
@@ -388,12 +385,12 @@
                   </section>
 
                   <section class="row expanded align-center" id="footer">
-                    <div class="sm-icons centered colum small-12">
+                    <div class="social-icons centered colum small-12">
                       <ul>
-                        <li><a href="https://github.com/alexandraharet" target="_blank"><img src="img/git.png" title="GitHub"></a></li>
-                        <li><a href="http://stackoverflow.com/users/5847696/alexandra" target="_blank"><img src="img/so.png" title="Stack Overflow"></a></li>
-                        <li><a href="https://www.linkedin.com/in/alexandraharet/" target="_blank"><img src="img/li.png" title="LinkedIn"></a></li>
-                        <li><a href="https://twitter.com/alexandraharet" target="_blank"><img src="img/tw.png" title="Twitter"></a></li>
+                        <li><a href="https://github.com/alexandraharet" target="_blank"><div class="git" title="GitHub"></div></a></li>
+                        <li><a href="http://stackoverflow.com/users/5847696/alexandra" target="_blank"><div class="so" title="Stack Overflow"></div></a></li>
+                        <li><a href="https://www.linkedin.com/in/alexandraharet/" target="_blank"><div class="li" title="LinkedIn"></div></a></li>
+                        <li><a href="https://twitter.com/alexandraharet" target="_blank"><div class="tw" title="Twitter"></div></a></li>
 
                       </ul>
                     </div>
@@ -404,7 +401,7 @@
                   </section>
 
                   <div id="back-top">
-                    <a href="#home"><img src="img/goback.png" title="Go back to top" alt="back to top button"></a>
+                    <a href="#home"><div class="goback" title="Go back to top" alt="back to top button"></div></a>
                   </div>
 
                   <script src="js/vendor/jquery.js"></script>

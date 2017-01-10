@@ -34,6 +34,10 @@ nav a:hover, a.active {
   border-bottom: 3px solid #2ca0a0;
 }
 
+a:hover {
+  color: #2ca0a0;
+}
+
 a {
   color: #2ca0a0;
 }
@@ -91,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #back-top img {
   width: 50px;
-  height: auto;  
+  height: auto;
 }
 
 .centered {
@@ -182,7 +186,7 @@ nav {
 .buttonMore {
   display: inline-block;
   position: absolute;
-  margin: -1.625rem 0 0 -4rem;
+  margin: -1.625rem 0 0 -3.1rem;
   padding: 10px;
   border: 1px solid #87dede;
   content: "View project";
@@ -201,10 +205,7 @@ nav {
 .tech-icons {
   display: inline-block;
   float: left;
-  padding: 5px;
-  text-align: center;
-  width: 40px;
-  height: auto;
+  margin: 5px;
 }
 
 
@@ -287,7 +288,7 @@ nav {
   display: inline-block;
 }
 
-.worktype {
+.work-type {
   background-color: #f2f2f2;
   border-radius: 0 0 10px 10px;
   padding-top: 10px;
@@ -327,24 +328,20 @@ nav {
 
 .work-logo {
   display: inline-block;
-  padding: 5px 0;
+  margin: 5px 0;
   height: auto;
   width: 100%;
   max-width: 60px;
   text-align: center;
+  float: right;
 }
 
-.sm-icons li {
+.social-icons li {
   display: inline-block;
-}
-
-.sm-icons img {
-  width: 50px;
   margin: 10px;
-  height: auto;
 }
 
-.sm-icons a, ul {
+.social-icons a, ul {
   border: 0px;
   margin: 0px;
 }

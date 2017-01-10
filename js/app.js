@@ -14,14 +14,23 @@ $(document).ready(function() {
     $(".herotext").delay(500).addClass("show");
 
     // WORKS
-
+/*
     var addStackIcons = function() {
       var technologies = $(".technologies").children("div");
       technologies.each(function(){
         $(this).append("<img src='img/technologies/" + this.className + ".png' / class='tech-icons' alt='" + this.className + " icon' title='" + this.className + "'/>");
       });
-
     }
+
+*/
+    var addStackIcons = function() {
+      var technologies = $(".technologies").children("div");
+      technologies.each(function(){
+      $(this).addClass("tech-icons");
+      });
+    }
+
+
 
     // NEEDS FIXING
 
