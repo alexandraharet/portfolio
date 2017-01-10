@@ -11,8 +11,9 @@ var addZoomInAndButton = function(myClass) {
     });
 }
 
-$(".herotext").delay(500).animate({top: "+20vh", opacity: 1}, 1000);
+// $(".herotext").delay(500).animate({top: "+20vh", opacity: 1}, 1000);
 
+$(".herotext").delay(500).addClass("show");
 
 // WORKS
 
@@ -142,7 +143,7 @@ $(function() {
       var scene = new ScrollMagic.Scene({
          triggerElement: this,
          offset
-       }).setClassToggle(this, "show").addIndicators().addTo(scrollMagicController);
+       }).setClassToggle(this, "show").addTo(scrollMagicController);
        var triggerElement = scene.triggerElement();
        $(triggerElement).css({
          "-webkit-overflow-scrolling": "touch"

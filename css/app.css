@@ -1,14 +1,9 @@
-body {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-
-.no-js #top-menu {
+.no-js .top-bar {
   display: none;
 }
 
 @media screen and (min-width: 40em) {
-  .no-js #top-menu {
+  .no-js .top-bar {
     display: block;
   }
 
@@ -16,7 +11,20 @@ body {
     display: none;
   }
 }
+.no-js [data-responsive-toggle]{
+    display:none;
+}
 
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.ontop {
+  z-index: 20 !important;
+}
 
 nav a, nav a:visited {
     color: #999999;
@@ -57,30 +65,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .herotext {
-  position: relative;
+  // position: relative;
   display: block;
   width: 1000px;
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
+  vertical-align: middle;
   opacity: 0;
   text-align: center;
   color: #ffffff;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  transition: -webkit-transform 2s ease-out, opacity 2s ease-out;
+  transition: transform 2s ease-out, opacity 2s ease-out;
+  z-index: 10;
 }
+
+.herotext.show {
+    opacity: 1;
+    -webkit-transform: translateY(20vh) !important;
+    transform: translateY(20vh) !important;
+  }
 
 #back-top {
   position: fixed;
-  bottom:20px;
+  bottom: 20px;
   right: 2%;
   z-index: 100;
   opacity: 0.8;
-  max-width: 10%;
+  width: 50px;
   height: auto;
 }
 
 .centered {
     text-align:center;
 }
+
+
 
 nav {
   display:inline-block;
@@ -220,6 +242,9 @@ nav {
 
 
 /* timeline related:  */
+.timeline {
+  overflow-x: hidden;
+}
 
 .timeline .timelineEvent {
     margin: 0 0 0.9375rem;
@@ -227,8 +252,8 @@ nav {
     padding: 0;
     background: transparent;
     opacity: 0;
-    transition: -webkit-transform 0.2s ease-out,opacity 0.3s ease-out;
-    transition: transform 0.2s ease-out,opacity 0.3s ease-out;
+    transition: -webkit-transform 0.2s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.2s ease-out, opacity 0.3s ease-out;
     position: relative;
 	}
 
@@ -248,8 +273,13 @@ nav {
     transform: translateX(0px) !important;
 }
 
+.timelineEvent:first-of-type {
+  padding-top: 30px;
+}
+
+
 .eventContent {
-	padding: 20px;
+	padding: 10px 20px;
 	border-radius: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -333,8 +363,8 @@ nav {
 }
 
 .sm-icons img {
-  width: 60px;
-  padding: 10px;
+  width: 50px;
+  margin: 10px;
   height: auto;
 }
 
