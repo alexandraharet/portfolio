@@ -13,16 +13,6 @@ $(document).ready(function() {
 
     $(".herotext").delay(500).addClass("show");
 
-    // WORKS
-/*
-    var addStackIcons = function() {
-      var technologies = $(".technologies").children("div");
-      technologies.each(function(){
-        $(this).append("<img src='img/technologies/" + this.className + ".png' / class='tech-icons' alt='" + this.className + " icon' title='" + this.className + "'/>");
-      });
-    }
-
-*/
     var addStackIcons = function() {
       var technologies = $(".technologies").children("div");
       technologies.each(function(){
@@ -30,6 +20,40 @@ $(document).ready(function() {
       });
     }
 
+
+// show / hide navbar on scroll up / scroll down
+
+var scrollTimeOut = true;
+var lastYPos = 0;
+var yPos = 0;
+var yPosDelta = 5;
+var nav = $('.title-bar');
+var navHeight = nav.outerHeight();
+var setNavClass = function() {
+    scrollTimeOut = false;
+    yPos = $(window).scrollTop();
+    if(Math.abs(lastYPos - yPos) >= yPosDelta) {
+        if (yPos > lastYPos && yPos > navHeight){
+            nav.removeClass('show-nav').addClass('hide-nav');
+        } else {
+            nav.removeClass('hide-nav').addClass('show-nav');
+        }
+        lastYPos = yPos;
+    }
+};
+
+$(window).scroll(function(e){
+scrollTimeOut = true;
+});
+
+setInterval(function() {
+if (scrollTimeOut) {
+    setNavClass();
+}
+}, 250);
+
+
+// end
 
 
     // NEEDS FIXING

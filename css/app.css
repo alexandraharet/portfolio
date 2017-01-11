@@ -19,9 +19,36 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.ontop {
+  z-index: 20 !important;
+}
+
+.title-bar.hide-nav {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.title-bar.show-nav {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.nav-up {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav-down {
+
+}
+
 .title-bar {
   height: 42px;
+  background: #2ca0a0;
 }
+
 nav a, nav a:visited {
   color: #999999;
   border-bottom: 3px solid #333333;
