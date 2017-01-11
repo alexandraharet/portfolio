@@ -19,11 +19,9 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-
-.ontop {
-  z-index: 20 !important;
+.title-bar {
+  height: 42px;
 }
-
 nav a, nav a:visited {
   color: #999999;
   border-bottom: 3px solid #333333;
