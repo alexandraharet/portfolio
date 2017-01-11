@@ -83,6 +83,7 @@ var timelineToCenter = function() {
 }
 
 var timelineToLeft = function() {
+  $(".middleLine").css({"background-image": "none"});
   $(".timelineIcon").css({bottom: "0px", top: "-30px", "margin-top": "10px"});
 }
 
