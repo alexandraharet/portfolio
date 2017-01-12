@@ -21,6 +21,15 @@ $(document).ready(function() {
     }
 
 
+
+// hide nav after menu item has been clicked
+
+
+if ($(".title-bar").css("display") !== "none") $("#top-menu").click(function(){
+      if ($(this).css("display") == "flex") $(this).css({"display":"none"});
+      });
+//end
+
 // show / hide navbar on scroll up / scroll down
 
 var scrollTimeOut = true;
@@ -38,6 +47,8 @@ var setNavClass = function() {
         } else {
             nav.removeClass('hide-nav').addClass('show-nav');
         }
+        if ($(".title-bar").css("display") !== "none")
+          if($("#top-menu").css("display") == "flex") $("#top-menu").css({"display":"none"});
         lastYPos = yPos;
     }
 };
@@ -54,6 +65,7 @@ if (scrollTimeOut) {
 
 
 // end
+
 
 
     // NEEDS FIXING
