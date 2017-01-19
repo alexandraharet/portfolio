@@ -77,14 +77,6 @@ h6 {
   color: #2ca0a0;
   font-family: 'Josefin Sans', sans-serif;
 }
-#quote h1,
-#quote h2,
-#quote h3,
-#quote h4,
-#quote h5,
-#quote h6 {
-  text-align: left;
-}
 .sticky {
   width: 100%;
 }
