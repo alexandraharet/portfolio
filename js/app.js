@@ -178,9 +178,10 @@ $(function() {
   var scrollMagicController = new ScrollMagic.Controller();
 
   var animateTimeline = function() {
-    var offset = - $(window).height()/4.5; // TODO: recalculate offset on screen resize;
-
+    var offset = - $(window).height()/4.5;
+    var addMarginTop = -150;
     $('.timelineEvent').each(function() {
+
       var scene = new ScrollMagic.Scene({
         triggerElement: this,
         offset
@@ -192,6 +193,7 @@ $(function() {
         "-webkit-transform": "translateZ(0px)",
         "-webkit-transform": "translate3d(0,0,0)"
       });
+
     });
   }
   animateTimeline();
