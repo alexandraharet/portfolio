@@ -185,6 +185,17 @@ h6 {
   -moz-transform: scale(1.1);
   transform: scale(1.1);
 }
+.readmore {
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: 1px solid #2ca0a0;
+  max-width: 70%;
+  transition: all 0.3s;
+}
+.readmore:hover {
+  background-color: #ebfafa;
+}
 .buttonMore {
   display: inline-block;
   position: absolute;
