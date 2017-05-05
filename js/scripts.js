@@ -66,47 +66,6 @@ if (scrollTimeOut) {
 
 // end
 
-
-
-    // NEEDS FIXING
-
-    /*
-
-    var addStackIcons = function() {
-    var technologies = [];
-    technologies = $(".technologies").children("div").attr("class").split(/\s+/);
-    console.log(technologies);
-    $.each(technologies, function(){
-    $(".technologies").children("div").append("<img src='../ah-landing-page/img/technologies/" + this + ".png' / class='tech-icons'>");
-    technologies = [];
-    console.log(technologies);
-  });
-
-}
-
-*/
-
-
-/* NEEDS FIXING
-var addStackIcons = function() {
-$.each(getProjectIDs(), function(){
-var technologies = $(".technologies #" + this).children("div").attr("class").split(/\s+/);
-console.log(technologies);
-$.each(technologies, function(){
-$(".technologies").children("div").append("<img src='../ah-landing-page/img/technologies/" + this + ".png' / class='tech-icons'>");
-});
-})
-}
-
-var getProjectIDs = function () {
-var projectIDs = [];
-$.each($(".card"), function() {
-if ($(this).prop("id")) projectIDs.push($(this).prop("id"));
-});
-}
-
-*/
-
 // timeline animation
 
 
@@ -213,22 +172,5 @@ addZoomInAndButton(".img-container");
 addStackIcons();
 getDayAndYear();
 addTimelineIcons();
-
-
-
-// vertical alignment to middle using CSS, for class .center
-/*
-$(window).resize(function() {
-$(".toMiddle").each(function() {
-var wh = (($(this).parent().height()-$(this).height())/2)+'px';
-$(this).css({
-top: wh
-});
-});
-
-
-}).resize(); */
-
-
 
 });
