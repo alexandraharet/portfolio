@@ -2,3 +2,4 @@
 *.zip
 local/
 *.picasa*
+.vscode/settings.json
