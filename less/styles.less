@@ -366,14 +366,27 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 100%;
 }
 
+.logo-column {
+  padding-right: 0;
+}
+
 .work-logo {
-  display: inline-block;
-  margin: 5px 0;
+  margin: 3px 0;
   height: auto;
   width: 100%;
   max-width: 60px;
   text-align: center;
   float: right;
+  width: 60px;
+  height: 60px;
+  &.realise-logo {
+    background: url(../img/realise-logo.jpg) no-repeat;
+    background-size: contain; 
+  }
+  &.wallapop-logo {
+    background: url(../img/wallapop-logo.png) no-repeat;
+    background-size: contain;
+  }
 }
 
 .social-icons {
