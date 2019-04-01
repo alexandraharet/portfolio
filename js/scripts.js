@@ -170,24 +170,23 @@ $(function() {
   function randomOctoImageAndQuote() {
     if ($('#octo-quote').length) {
       $('html').css('cursor', 'pointer');
-      $('#octo-quote').html('Every night, every night, at the same time!');
       let quoteMin = 0, quoteMax, quotes, randomQuote;
       $.getJSON('./js/octo-quotes.json', (r) => {
         quotes = r.data;
         quoteMax = r.data.length - 1;
-      });
-      randomQuote = Math.floor(Math.random() * (quoteMax - quoteMin)) + quoteMin;
-      $('#octo-quote p').html('Every night, every night, at the same time!');
-
-      $(window).click(() => {
-        const imgMin = 1, imgMax = 21;
-        const randomImg = Math.floor(Math.random() * (imgMax - imgMin)) + imgMin;
-        const octoUrl = './img/octo/octopus-' + randomImg + '.png';
-        $('#octo-image').css({ 'background-image': 'url(' + octoUrl + ')' });
-
         randomQuote = Math.floor(Math.random() * (quoteMax - quoteMin)) + quoteMin;
-        // $('#octo-image p').html(quotes[randomQuote]);
-
+        $('#octo-quote').html(quotes[randomQuote]);
+  
+        $(window).click(() => {
+          const imgMin = 1, imgMax = 21;
+          const randomImg = Math.floor(Math.random() * (imgMax - imgMin)) + imgMin;
+          const octoUrl = './img/octo/octopus-' + randomImg + '.png';
+          $('#octo-image').css({ 'background-image': 'url(' + octoUrl + ')' });
+  
+          randomQuote = Math.floor(Math.random() * (quoteMax - quoteMin)) + quoteMin;
+          $('#octo-quote').html(quotes[randomQuote]);
+  
+        });
       });
     }
   }
