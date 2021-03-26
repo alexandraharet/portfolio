@@ -1,48 +1,168 @@
-.ah-logo{top:0px;left:0px;
-width:60px;height:60px;background: url("../img/sprites.png") no-repeat -0px -58px;}
-.angular{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -160px -200px;}
-.bootstrap{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -120px -150px;}
-.fb{top:0px;left:0px;
-width:50px;height:50px;background: url("../img/sprites.png") no-repeat -60px -180px;}
-.foundation{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -170px -30px;}
-.git{top:0px;left:0px;
-width:50px;height:50px;background: url("../img/sprites.png") no-repeat -120px -100px;}
-.github{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -200px -30px;}
-.goback{top:0px;left:0px;
-width:50px;height:50px;background: url("../img/sprites.png") no-repeat -120px -50px;}
-.html5{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -190px -200px;}
-.javascript{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -170px -120px;}
-.jquery{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -170px -90px;}
-.less{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -170px -60px;}
-.li{top:0px;left:0px;
-width:50px;height:50px;background: url("../img/sprites.png") no-repeat -110px -180px;}
-.mailchimp{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -170px -0px;}
-.moodymonday{top:0px;left:0px;
-width:60px;height:58px;background: url("../img/sprites.png") no-repeat -0px -0px;}
-.nobelglobe{top:0px;left:0px;
-width:60px;height:60px;background: url("../img/sprites.png") no-repeat -0px -118px;}
-.onestopit{top:0px;left:0px;
-width:60px;height:60px;background: url("../img/sprites.png") no-repeat -0px -178px;}
-.php{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -200px -60px;}
-.sass{top:0px;left:0px;
-width:30px;height:30px;background: url("../img/sprites.png") no-repeat -200px -0px;}
-.skyscanner{top:0px;left:0px;
-width:60px;height:60px;background: url("../img/sprites.png") no-repeat -60px -60px;}
-.so{top:0px;left:0px;
-width:50px;height:50px;background: url("../img/sprites.png") no-repeat -160px -150px;}
-.theidco-logo{top:0px;left:0px;
-width:60px;height:60px;background: url("../img/sprites.png") no-repeat -60px -0px;}
-.trofeo-logo{top:0px;left:0px;
-width:60px;height:60px;background: url("../img/sprites.png") no-repeat -60px -120px;}
-.tw{top:0px;left:0px;
-width:50px;height:50px;background: url("../img/sprites.png") no-repeat -120px -0px;}
+.ah-logo {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/sprites.png") no-repeat -0px -58px;
+}
+.angular {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -160px -200px;
+}
+.bootstrap {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -120px -150px;
+}
+.fb {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/sprites.png") no-repeat -60px -180px;
+}
+.foundation {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -170px -30px;
+}
+.git {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/sprites.png") no-repeat -120px -100px;
+}
+.github {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -200px -30px;
+}
+.goback {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/sprites.png") no-repeat -120px -50px;
+}
+.html5 {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -190px -200px;
+}
+.javascript {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -170px -120px;
+}
+.jquery {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -170px -90px;
+}
+.less {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -170px -60px;
+}
+.li {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/sprites.png") no-repeat -110px -180px;
+}
+.mailchimp {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -170px -0px;
+}
+.moodymonday {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 58px;
+  background: url("../img/sprites.png") no-repeat -0px -0px;
+}
+.nobelglobe {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/sprites.png") no-repeat -0px -118px;
+}
+.onestopit {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/sprites.png") no-repeat -0px -178px;
+}
+.php {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -200px -60px;
+}
+.sass {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprites.png") no-repeat -200px -0px;
+}
+.skyscanner {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/sprites.png") no-repeat -60px -60px;
+}
+.so {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/sprites.png") no-repeat -160px -150px;
+}
+.theidco-logo {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/sprites.png") no-repeat -60px -0px;
+}
+.trofeo-logo {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/sprites.png") no-repeat -60px -120px;
+}
+.tw {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/sprites.png") no-repeat -120px -0px;
+}
