@@ -1,0 +1,31 @@
+.Venue {
+}
+
+.cTous {
+  position: relative;
+  height: 380px;
+  width: 100%;
+  display: block;
+  background: url('../../img/c-tous.png') center center no-repeat;
+  background-size: cover;
+}
+
+.Button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 5px;
+  background-color: rgba(4, 39, 28, 0.7);
+  padding: 10px;
+  text-decoration: none;
+  color:rgb(205, 221, 200);
+  font-weight: bold;
+  font-size: small;
+  border: 2px solid rgba(129, 156, 148, 0.7);
+}
+
+.Button:hover {
+  background-color: rgba(13, 78, 58, 0.7);;
+  padding: 10px;
+  text-decoration: none;
+}
